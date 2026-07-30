@@ -1,10 +1,20 @@
-# AMP-GPT2: Antimicrobial Peptide Sequence Generator
+# PlantAMPGen: Antimicrobial Peptide Sequence Generator
+
+![License](https://img.shields.io/github/license/skbinfo/PlantAMPGen)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-GPT--2-orange)
 
 A lightweight GPT-2-style autoregressive language model for generating novel
 antimicrobial peptide (AMP) candidate sequences, trained on curated peptide
 data from FASTA sources. The pipeline has two stages: (1) filtering and
 tokenizing raw FASTA sequences into a training-ready CSV, and (2) training a
 small GPT-2 model on those sequences and sampling new candidates.
+
+<p align="center">
+  <img src="PlantAMPGen_Workflow.png" alt="PlantAMPGen workflow diagram: FASTA input, sequence filtering, tokenization, GPT-2 model training, autoregressive sampling, and candidate peptide output" width="100%">
+</p>
+
+<p align="center"><em>Figure: End-to-end PlantAMPGen workflow — from raw FASTA input through data preparation, GPT-2 training, and novel AMP candidate generation.</em></p>
 
 ---
 
@@ -46,9 +56,35 @@ Install dependencies:
 pip install torch transformers biopython numpy
 ```
 
+Clone the repository:
+
+```bash
+git clone https://github.com/skbinfo/PlantAMPGen.git
+cd PlantAMPGen
+```
+
 ---
 
 ## Repository Contents
+
+```
+PlantAMPGen/
+├── LICENSE
+├── PlantAMPGen_Workflow.png     # Workflow diagram (shown above)
+├── README.md
+├── prepare_gpt2.py              # Step 1: FASTA filtering & preparation
+├── train_gpt2.py                # Step 2: GPT-2 training & generation
+├── vocab.txt                    # Amino-acid tokenizer vocabulary
+├── amp_gpt2_model.pkl           # Pickled {config, state_dict} of best checkpoint
+└── amp_model_checkpoint/        # Hugging Face checkpoint (created after training)
+    ├── config.json
+    ├── generation_config.json
+    ├── model.safetensors
+    ├── special_tokens_map.json
+    ├── tokenizer_config.json
+    ├── vocab.txt
+    └── generated_candidates.csv # Ranked novel AMP candidates
+```
 
 | File | Purpose |
 |---|---|
@@ -254,3 +290,14 @@ python train_gpt2.py \
   vocabulary or want more/less diverse output.
 
 ---
+
+## License
+
+This project is licensed under the terms of the [`LICENSE`](./LICENSE) file
+included in this repository.
+
+---
+
+## Repository
+
+[github.com/skbinfo/PlantAMPGen](https://github.com/skbinfo/PlantAMPGen)
