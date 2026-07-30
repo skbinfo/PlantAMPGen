@@ -18,7 +18,7 @@ raw_sequences.fasta
         │
         ▼
    train_gpt2.py    ──►  amp_model_checkpoint/  (HF checkpoint + generated_candidates.csv)
-                     ──►  amp_gpt2_model.pkl     (pickled config + state_dict)
+                    ──►  amp_gpt2_model.pkl     (pickled config + state_dict)
 ```
 
 1. **`prepare_gpt2.py`** parses a FASTA file, filters sequences by length and
@@ -254,7 +254,3 @@ python train_gpt2.py \
   vocabulary or want more/less diverse output.
 
 ---
-
-## License
-
-Add your license of choice here (e.g. MIT, Apache-2.0).
