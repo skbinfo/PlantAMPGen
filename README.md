@@ -298,6 +298,39 @@ included in this repository.
 
 ---
 
+
 ## Repository
 
 [github.com/skbinfo/PlantAMPGen](https://github.com/skbinfo/PlantAMPGen)
+
+---
+
+# Developers
+
+### Md. Faiyaz Rizwee
+📧 mdfaiyaz4840@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/md-faiyaz-rizwee-62024438b
+
+---
+
+### A.T. Vivek
+📧 vivek37373@nipgr.ac.in
+
+🔗 LinkedIn: https://www.linkedin.com/in/vivek-thiruvettai/
+
+---
+
+# Contact
+
+For questions, bug reports, feature requests, or scientific discussions, please contact:
+
+**Dr. Shailesh Kumar**
+
+Staff Scientist  
+Bioinformatics Laboratory #202  
+National Institute of Plant Genome Research (NIPGR)  
+New Delhi, India
+
+📧 **Email:** shailesh@nipgr.ac.in
+
