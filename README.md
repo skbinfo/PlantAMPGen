@@ -307,7 +307,16 @@ included in this repository.
 
 # Developers
 
+### Love Kaushik
+
+📧 lovekaushik271@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/love-kaushik-083955209/
+
+---
+
 ### Md. Faiyaz Rizwee
+
 📧 mdfaiyaz4840@gmail.com
 
 🔗 LinkedIn: https://www.linkedin.com/in/md-faiyaz-rizwee-62024438b
@@ -315,6 +324,7 @@ included in this repository.
 ---
 
 ### A.T. Vivek
+
 📧 vivek37373@nipgr.ac.in
 
 🔗 LinkedIn: https://www.linkedin.com/in/vivek-thiruvettai/
@@ -333,4 +343,3 @@ National Institute of Plant Genome Research (NIPGR)
 New Delhi, India
 
 📧 **Email:** shailesh@nipgr.ac.in
-
